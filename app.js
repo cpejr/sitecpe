@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const bodyParser = require('body-parser');
 
 var createError = require('http-errors');
