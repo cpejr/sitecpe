@@ -6040,13 +6040,36 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
 
+.yellow-background {
+  background-color: #ead123; }
+
 .blog-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+.images-blog {
+  margin: 20px 0; }
+
+.blog-text {
+  font-size: 30px;
+  margin: 0 0 40px 0; }
+
+.row {
+  margin-right: 0; }
+
+.blog-image {
+  width: 800; }
 
 /*# sourceMappingURL=style.css.map */
