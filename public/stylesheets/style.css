@@ -6060,16 +6060,30 @@ a {
   border-right: none; }
 
 .images-blog {
-  margin: 20px 0; }
+  margin: 20px 0;
+  text-align: center; }
 
 .blog-text {
   font-size: 30px;
   margin: 0 0 40px 0; }
 
 .row {
-  margin-right: 0; }
+  margin-right: 0;
+  margin-left: 0; }
 
-.blog-image {
-  width: 800; }
+.blog-btn-center {
+  text-align: center;
+  margin: 40px 0; }
+
+.blog-btn {
+  border-radius: 25px;
+  padding: 11px 25px;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  font-size: 2rem;
+  background: linear-gradient(to right, #7f26bf 0%, #9926c0 100%);
+  color: white;
+  padding: 30px 10px; }
 
 /*# sourceMappingURL=style.css.map */
