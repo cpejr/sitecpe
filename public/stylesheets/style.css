@@ -6047,7 +6047,8 @@ a {
   color: #00B7FF; }
 
 .yellow-background {
-  background: linear-gradient(to bottom, #f5e722, #b8b040); }
+  background: linear-gradient(to bottom, #f5e722, #b8b040);
+  background-attachment: fixed; }
 
 .blog-title {
   font-family: 'Maven Pro', sans-serif;
@@ -6068,7 +6069,7 @@ a {
 
 .blog-text {
   font-family: 'Muli', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0 0 40px 0; }
 
 .row {
@@ -6080,16 +6081,16 @@ a {
   margin: 40px 0; }
 
 .blog-btn {
-  border-radius: 25px;
+  border-radius: 40px;
   padding: 11px 25px;
   font-weight: 600;
   border: none;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Muli', sans-serif;
   background: linear-gradient(to right, #7f26bf 0%, #9926c0 100%);
   color: white;
-  padding: 30px 10px; }
+  padding: 25px 10px; }
 
 .wrapper {
   position: absolute;
@@ -6207,5 +6208,19 @@ a {
   font-size: 26px;
   font-weight: normal;
   color: #333; }
+
+.contact-background {
+  background: linear-gradient(45deg, #0f1e66 0%, #061040 100%);
+  padding: 130px 0; }
+
+.contact-text {
+  font-size: 50px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-top: 10px; }
+
+.btn-contact {
+  margin: 50px 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */
