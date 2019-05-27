@@ -8,24 +8,24 @@
 
 
 <div class = "row">
-    <div class = "col-lg-1 col-sm-1 col-md-1"></div>
-    <div class = "col-lg-5 col-sm-10 col-md-10 form-background">
-        <form>
+    <div class = "col-lg-6 col-sm-12 col-md-12">
+        <div class = "form-background">
+        <form action = "/contato" method = "post" role = "form">
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nome</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                <input type="text" name = "name" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
             </div>
              <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" name = "email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
              <div class="form-group">
                 <label for="exampleFormControlInput1">Telefone</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
+                <input type="text" name = "telefone" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Área</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" name = "area" id="exampleFormControlSelect1">
                 <option>Selecione</option>
                 <option>Eletrônica</option>
                 <option>Fotovoltaico</option>
@@ -36,18 +36,22 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Como podemos ajudá-lo?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" name = "text" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class = "row">
                     <div class = "col-lg-4"></div>
                     <div class = "col-sm-12 col-lg-4 blog-btn-center">
-                            <button type = "submit" class = "contact-btn blog-btn btn-block">Enviar</button>
+                        <button type = "submit" class = "contact-btn blog-btn btn-block">Enviar</button>
             </div>
+            </div>
+            <div> 
+                {{sent}}
             </div>
             </form>
-        </form>
-    </div>
-    <div class = "col-lg-5 col-sm-10 col-md-10">
+        </div>
+        </div>
+
+    <div class = "col-lg-6 col-sm-12 col-md-12">
         <div class = "side-contact-text">
             Descubra como a CPE pode te ajudar!
         </div>
@@ -57,6 +61,7 @@
               a organizar e otimizar processos na agência. Basta
                preencher o formulário ao lado que nós entraremos
                 em contato com você.
+
         </div>
     </div>
 </div>
