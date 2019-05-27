@@ -6086,11 +6086,11 @@ a {
   font-weight: 600;
   border: none;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: 'Muli', sans-serif;
   background: linear-gradient(to right, #7f26bf 0%, #9926c0 100%);
   color: white;
-  padding: 25px 10px; }
+  padding: 22px 0; }
 
 .wrapper {
   position: absolute;
@@ -6214,11 +6214,11 @@ a {
   padding: 130px 0; }
 
 .contact-text {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-family: 'Muli', sans-serif;
   text-align: center;
-  padding-top: 10px; }
+  padding: 10px 100px; }
 
 .btn-contact {
   margin: 50px 0 0 0; }
