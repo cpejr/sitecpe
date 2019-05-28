@@ -6318,7 +6318,7 @@ a {
 @media (min-width: 992px) {
   .form-background {
     background-color: white;
-    margin: 0 0 0 60px;
+    margin: 0 0 10px 60px;
     padding: 30px 40px;
     border-radius: 5%; } }
 
