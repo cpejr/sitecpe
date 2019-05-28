@@ -6317,10 +6317,7 @@ a {
 
 @media (min-width: 992px) {
   .form-background {
-    background-color: white;
-    margin: 0 0 10px 60px;
-    padding: 30px 40px;
-    border-radius: 5%; } }
+    margin: 0 0 10px 60px; } }
 
 .message-state {
   text-align: center;
