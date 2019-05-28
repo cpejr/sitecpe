@@ -1,14 +1,16 @@
 <div class = "page-contact-background">
+<div class = "container-fluid">
 <div class = "row">
          <div class = "col-sm-2"></div>
          <div class = "col-sm-8 contact-title">
              Estamos prontos para ouvir você!
          </div>
      </div>
+</div>
 
-
+<div class = "container-fluid">
 <div class = "row">
-    <div class = "col-lg-6 col-sm-12 col-md-12 col-sm-push-12">
+    <div class = "col-lg-6 col-sm-12 col-md-12 order-lg-1 order-sm-2">
         <div class = "form-background">
         <form action = "/contato" method = "post" role = "form">
             <div class="form-group">
@@ -38,24 +40,27 @@
                 <label for="Mensagem">Como podemos ajudá-lo?</label>
                 <textarea class="form-control" name = "text" id="text" rows="3" required></textarea>
             </div>
+            <div class= "container-fluid">
             <div class = "row">
                 <div class = "col-lg-4"></div>
                 <div class = "col-sm-12 col-lg-4 blog-btn-center">
                     <button type = "submit" class = "contact-btn blog-btn btn-block">Enviar</button>
                 </div>
             </div>
-
+            </div>
+            <div class= "container-fluid">
             <div class = "row">
                 <div class = "col-2"></div>
                 <div class = "col-8 message-state">
                     {{sent}}
                 </div>
             </div>
+            </div>
             </form>
         </div>
     </div>
 
-    <div class = "col-lg-6 col-sm-12 col-md-12 col-sm-pull-12">
+    <div class = "col-lg-6 col-sm-12 col-md-12 order-lg-2 order-sm-1">
         <div class = "side-contact-text">
             Descubra como a CPE pode te ajudar!
         </div>
@@ -70,8 +75,4 @@
     </div>
 </div>
 </div>
-
-<div class="row">
-  <div class="col-md-6 col-md-push-6">B</div>
-  <div class="col-md-6 col-md-pull-6">A</div>
 </div>
