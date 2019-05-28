@@ -6,7 +6,6 @@ const nodemailer = require("nodemailer");
 class SendEmails{
     constructor(message){
         this.message = message;
-        this.mandou = 0;
     }
 
     sendContactMail(){
@@ -25,10 +24,10 @@ class SendEmails{
         });
 
         let mailOptions = {
-            from: '"arthurlapertosa 👻" <cpe.mail.test@gmail.com>', // sender address
+            from: '"Site da CPE" <cpe.mail.test@gmail.com>', // sender address
             to: "arthurlapertosa2@gmail.com", // list of receivers
             subject: "Novo contato", // Subject line
-            text: "Hello world?", // plain text body
+            text: "CPE", // plain text body
             html: this.message // html body
           };
 
@@ -41,8 +40,7 @@ class SendEmails{
                 else {
                     console.log(`Email enviado ${info.response}`);
                     console.log('Message sent: %s', info.messageId);
-                    this.mandou = 1;
-                    resolve(this.mandou);
+                    resolve(1);
                 }
                 });
           });

@@ -9,6 +9,8 @@
 // font-family: 'Maven Pro', sans-serif
 
 
+
+//Página Home ------------------------------------------------------------------------------
 body
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
@@ -60,6 +62,81 @@ a
   background: linear-gradient(to right, #7f26bf 0%,#9926c0 100%)
   color: white
   padding: 22px 0
+
+.blog-btn:hover
+  background: linear-gradient(to right, #631d95 0%, #771d95 100%)
+
+
+.contact-background //fundo da parte do contato pagina home
+  background: linear-gradient(45deg, #0f1e66 0%,#061040 100%)
+  padding: 130px 0
+
+.contact-text //Texto do contato
+  font-size: 40px
+  color: white
+  font-family: 'Muli', sans-serif
+  text-align: center
+  padding: 10px 100px
+
+.btn-contact //botao contato
+  margin: 50px 0 0 0
+
+.images-metodology
+  margin: 20px 0
+  margin-left: 20px
+  margin-right: 20px
+  text-align: center
+
+.metodology-text
+  font-family: 'Muli', sans-serif
+  font-size: 25px
+  margin: 0 0 40px 0
+
+.metodology-btn
+  border-radius: 40px
+  padding: 11px 25px
+  font-weight: 600
+  border: none
+  display: inline-block
+  font-size: 1.8rem
+  font-family: 'Muli', sans-serif
+  background: #0f1e66
+  color: white
+  padding: 25px 10px
+
+
+.metodology-title
+  font-family: 'Maven Pro', sans-serif
+  text-align: center
+  font-size: 50px
+  font-weight: bold
+  margin: 20px 0
+  padding-bottom: 0px
+  border-width: thin
+  border-style: none
+  border-top: none
+  border-left: none
+  border-right: none
+
+.metodology-btn-center
+  text-align: center
+  margin: 40px 0px
+
+.metodology-box
+  margin-top: 5px
+  margin-bottom: 5px
+  padding-left: 3px
+  padding-right: 3px
+  padding-top: 3px
+  padding-bottom: 3px
+  background-color: white
+  border-radius: 5px
+
+.grey-background
+  background-color: #F1EFEB
+  background-attachment: fixed
+
+//End Página Home ------------------------------------------------------------------------------
 
 .wrapper
   position: absolute
@@ -193,82 +270,23 @@ a
   font-weight: normal
   color: #333
 
-.contact-background //fundo da parte do contato pagina home
-  background: linear-gradient(45deg, #0f1e66 0%,#061040 100%)
-  padding: 130px 0
-
-.contact-text //Texto do contato
-  font-size: 40px
-  color: white
-  font-family: 'Muli', sans-serif
-  text-align: center
-  padding: 10px 100px
-
-.btn-contact //botao contato
-  margin: 50px 0 0 0
-
-.images-metodology
-  margin: 20px 0
-  margin-left: 20px
-  margin-right: 20px
-  text-align: center
-
-.metodology-text
-  font-family: 'Muli', sans-serif
-  font-size: 25px
-  margin: 0 0 40px 0
-
-.metodology-btn
-  border-radius: 40px
-  padding: 11px 25px
-  font-weight: 600
-  border: none
-  display: inline-block
-  font-size: 1.8rem
-  font-family: 'Muli', sans-serif
-  background: #0f1e66
-  color: white
-  padding: 25px 10px
 
 
-.metodology-title
+// Página contato --------------------------------------------------------------------------
+.contact-title
   font-family: 'Maven Pro', sans-serif
   text-align: center
   font-size: 50px
   font-weight: bold
   margin: 20px 0
-  padding-bottom: 0px
-  border-width: thin
-  border-style: none
-  border-top: none
-  border-left: none
-  border-right: none
-
-.metodology-btn-center
-  text-align: center
-  margin: 40px 0px
-
-.metodology-box
-  margin-top: 5px
-  margin-bottom: 5px
-  padding-left: 3px
-  padding-right: 3px
-  padding-top: 3px
-  padding-bottom: 3px
-  background-color: white
-  border-radius: 5px
-
-.grey-background
-  background-color: #F1EFEB
-  background-attachment: fixed
+  padding-bottom: 10px
+  color: #061040
 
 .contact-btn
   padding: 10px 0
 
-.form-background
-  background-color: white
-  padding: 30px 20px
-  border-radius: 10%
+.contact-btn:hover
+  background: linear-gradient(to right, #631d95 0%, #771d95 100%)
 
 .page-contact-background
   background-color: #99ccff
@@ -287,3 +305,24 @@ a
   color: white
   font-family: 'Muli', sans-serif
   text-align: center
+
+.form-background
+  background-color: white
+  margin: 0 45px
+  padding: 30px 40px
+  border-radius: 5%
+
+@media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir a margin desse jeito
+  .form-background
+    background-color: white
+    margin: 0 0 0 60px
+    padding: 30px 40px
+    border-radius: 5%
+
+.message-state
+  text-align: center
+  font-family: 'Muli', sans-serif
+  font-size: 25px
+  border-radius: 5%
+
+// /Página contato --------------------------------------------------------------------------

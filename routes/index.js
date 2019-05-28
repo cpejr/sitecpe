@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 var express = require('express');
 var router = express.Router();
 const EmailSend = require('../backend/sendingEmails');
@@ -33,14 +31,14 @@ router.post('/contato', (req, res, next) =>{
   emailmandar = new EmailSend(mensagem);
   emailmandar.sendContactMail().then((result)=>{
       if(result === 1){
-        res.render('contato', { title: 'Contato', sent: 'Message Sent' })
+        res.render('contato', { title: 'Contato', sent: 'Sua mensagem foi enviada!' })
        }
       else{
-        res.render('contato', { title: 'Contato', sent: 'ERROR SENDIND MESSAGE'})
+        res.render('contato', { title: 'Contato', sent: 'Erro no envio da mensagem'})
       }
     }).catch((error) =>{
       console.log(error);
-      res.render('contato', { title: 'Contato',sent: 'ERROR SENDIND MESSAGE'})
+      res.render('contato', { title: 'Contato', sent: 'Erro no envio da mensagem'})
     });
   });
 
