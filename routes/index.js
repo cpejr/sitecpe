@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const EmailSend = require('../backend/sendingEmails');
+const EmailSend = require('../models/sendingEmails');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
