@@ -39,6 +39,9 @@ a
 
 // End home slider
 
+.blog-background
+  min-height: 90vh
+
 .blog-title
   font-family: 'Maven Pro', sans-serif
   text-align: center
@@ -58,8 +61,10 @@ a
 
 .blog-text
   font-family: 'Muli', sans-serif
-  font-size: 25px
+  font-size: 40px
   margin: 0 0 40px 0
+  @media (min-width: 992px)
+    font-size: 25px
 
 .blog-btn-center
   text-align: center
@@ -71,11 +76,13 @@ a
   font-weight: 600
   border: none
   display: inline-block
-  font-size: 1.3rem
+  font-size: 2rem
   font-family: 'Muli', sans-serif
   background: linear-gradient(to right, #7f26bf 0%,#9926c0 100%)
   color: white
   padding: 22px 0
+  @media (min-width: 992px)
+    font-size: 1.3rem
 
 .blog-btn:hover
   background: linear-gradient(to right, #631d95 0%, #771d95 100%)
@@ -87,11 +94,13 @@ a
 
 //Texto do contato
 .contact-text
-  font-size: 40px
+  font-size: 55px
   color: white
   font-family: 'Muli', sans-serif
   text-align: center
   padding: 10px 100px
+  @media (min-width: 992px)
+    font-size: 40px
 
 //botao contato
 .btn-contact
@@ -105,8 +114,10 @@ a
 
 .metodology-text
   font-family: 'Muli', sans-serif
-  font-size: 25px
+  font-size: 40px
   margin: 0 0 40px 0
+  @media (min-width: 992px)
+    font-size: 25px
 
 .metodology-btn
   border-radius: 40px
@@ -114,11 +125,13 @@ a
   font-weight: 600
   border: none
   display: inline-block
-  font-size: 1.8rem
+  font-size: 2rem
   font-family: 'Muli', sans-serif
   background: #0f1e66
   color: white
   padding: 25px 10px
+  @media (min-width: 992px)
+    font-size: 1.3rem
 
 
 .metodology-title
@@ -151,13 +164,17 @@ a
 .grey-background
   background-color: #F1EFEB
   background-attachment: fixed
+  min-height: 90vh
+
+.background-who-we-are
+  min-height: 90vh
 
 .text-who-we-are
   font-family: 'Muli', sans-serif
   font-size: 35px
   padding: 10px 14vw
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
-      font-size: 20px
+    font-size: 20px
 
 .text-know-more
   font-family: 'Muli', sans-serif
@@ -165,16 +182,21 @@ a
   font-weight: bold
   padding: 0 14vw 40px
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
-      font-size: 20px
+    font-size: 20px
 
+.a-text-know-more
+  color: black
+  
 .number-who
   font-size: 70px
+  text-align: center
   font-weight: bold
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
       font-size: 55px
 
 .text-number-who
   font-size: 30px
+  text-align: center
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
       font-size: 22px
 
@@ -232,4 +254,17 @@ a
   font-size: 25px
   border-radius: 5%
 
+
+.input-height
+  height: 70px
+  font-size: 40px
+  @media (min-width: 992px)
+    font-size: 1rem
+    height: 40px
+
+select.form-control:not([size]):not([multiple])
+  height: 70px
+  @media (min-width: 992px)
+    height: 40px
+  
 // End contact --------------------------------------------------------------------------
