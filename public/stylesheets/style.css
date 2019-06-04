@@ -6055,7 +6055,7 @@ a {
 
 .img-slider {
   width: 100vw;
-  height: 30vh;
+  height: 30vmax;
   object-fit: cover; }
   @media (min-width: 992px) {
     .img-slider {
