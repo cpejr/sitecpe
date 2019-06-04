@@ -15,19 +15,19 @@
         <form action = "/contato" method = "post" role = "form">
             <div class="form-group">
                 <label for="Nome">Nome</label>
-                <input type="text" name = "name" class="form-control" id="name" placeholder="Nome" required>
+                <input type="text" name = "name" class="form-control input-height" id="name" placeholder="Nome" required>
             </div>
              <div class="form-group">
                 <label for="Email">Email</label>
-                <input type="email" name = "email" class="form-control" id="email" placeholder="name@example.com" required>
+                <input type="email" name = "email" class="form-control input-height" id="email" placeholder="name@example.com" required>
             </div>
              <div class="form-group">
                 <label for="Telefone">Telefone</label>
-                <input type="text" name = "telefone" class="form-control" id="telefone" placeholder="Telefone" required>
+                <input type="text" name = "telefone" class="form-control input-height" id="telefone" placeholder="Telefone" required>
             </div>
             <div class="form-group">
                 <label for="Area">Área</label>
-                <select class="form-control" name = "area" id="area" required>
+                <select class="form-control input-height" name = "area" id="area" required>
                 <option value disabled selected>Selecione</option>
                 <option>Eletrônica</option>
                 <option>Fotovoltaico</option>
@@ -40,6 +40,17 @@
                 <label for="Mensagem">Como podemos ajudá-lo?</label>
                 <textarea class="form-control" name = "text" id="text" rows="3" required></textarea>
             </div>
+
+            <div class= "container-fluid">
+            <div class = "row">
+                <div class = "col-2"></div>
+                {{!-- Mensagem de erro ou de sucesso --}}
+                <div class = "col-8 message-state"> 
+                    {{sent}}
+                </div>
+            </div>
+            </div>
+
             <div class= "container-fluid">
             <div class = "row">
                 <div class = "col-lg-4"></div>
@@ -48,14 +59,7 @@
                 </div>
             </div>
             </div>
-            <div class= "container-fluid">
-            <div class = "row">
-                <div class = "col-2"></div>
-                <div class = "col-8 message-state">
-                    {{sent}}
-                </div>
-            </div>
-            </div>
+            
             </form>
         </div>
     </div>
