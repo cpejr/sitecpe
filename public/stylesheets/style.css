@@ -6083,7 +6083,7 @@ a {
 .blog-title {
   font-family: 'Maven Pro', sans-serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   margin: 20px 0;
   padding-bottom: 10px;
@@ -6092,6 +6092,9 @@ a {
   border-top: none;
   border-left: none;
   border-right: none; }
+  @media (min-width: 992px) {
+    .blog-title {
+      font-size: 50px; } }
 
 .images-blog {
   margin: 20px 0;
@@ -6246,11 +6249,14 @@ a {
 .contact-title {
   font-family: 'Maven Pro', sans-serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   margin: 20px 0;
   padding-bottom: 10px;
   color: #061040; }
+  @media (min-width: 992px) {
+    .contact-title {
+      font-size: 50px; } }
 
 .contact-btn {
   padding: 10px 0; }
@@ -6263,34 +6269,42 @@ a {
   min-height: 100vh; }
 
 .side-contact-text {
-  padding: 50px 0;
-  font-size: 40px;
+  padding: 50px 60px;
+  font-size: 50px;
   color: white;
-  font-family: 'Muli', sans-serif;
-  text-align: center; }
+  font-family: "Muli", sans-serif; }
+  @media (min-width: 992px) {
+    .side-contact-text {
+      font-size: 40px;
+      padding: 50px 20px; } }
 
 .side-contact-text-2 {
-  padding: 70px 0 30px 0;
-  font-size: 25px;
+  padding: 0 60px 60px 60px;
+  font-size: 35px;
   color: white;
-  font-family: 'Muli', sans-serif;
-  text-align: center; }
+  font-family: 'Muli', sans-serif; }
+  @media (min-width: 992px) {
+    .side-contact-text-2 {
+      font-size: 25px;
+      padding: 70px 20px 30px 20px; } }
 
 .form-background {
   background-color: white;
   margin: 0 45px;
   padding: 30px 40px;
-  border-radius: 5%; }
-
-@media (min-width: 992px) {
-  .form-background {
-    margin: 0 0 10px 60px; } }
+  border-radius: 2%; }
+  @media (min-width: 992px) {
+    .form-background {
+      margin: 0 0 10px 60px; } }
 
 .message-state {
   text-align: center;
   font-family: 'Muli', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   border-radius: 5%; }
+  @media (min-width: 992px) {
+    .message-state {
+      font-size: 25px; } }
 
 .input-height {
   height: 70px;
@@ -6300,10 +6314,27 @@ a {
       font-size: 1rem;
       height: 40px; } }
 
+.input-height-text {
+  height: 150px;
+  font-size: 40px; }
+  @media (min-width: 992px) {
+    .input-height-text {
+      height: 90px;
+      font-size: 1rem; } }
+
 select.form-control:not([size]):not([multiple]) {
   height: 70px; }
   @media (min-width: 992px) {
     select.form-control:not([size]):not([multiple]) {
       height: 40px; } }
+
+.label-form {
+  font-size: 40px; }
+  @media (min-width: 992px) {
+    .label-form {
+      font-size: 25px; } }
+
+.page-contact-btn {
+  margin: 10px 0; }
 
 /*# sourceMappingURL=style.css.map */
