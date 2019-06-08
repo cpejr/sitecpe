@@ -6069,7 +6069,7 @@ a {
   left: 0;
   right: 0;
   /* Adjust this value to move the positioned div up and down */
-  top: 80%;
+  top: 75%;
   color: white;
   /* Set the width of the positioned div */
   width: 75%;
@@ -6078,6 +6078,13 @@ a {
     .box-img-slider .text-img-slider {
       width: 60%;
       font-size: 25px; } }
+
+.a-slider-know-more {
+  color: white;
+  font-size: 42px; }
+  @media (min-width: 992px) {
+    .a-slider-know-more {
+      font-size: 27px; } }
 
 .blog-background {
   min-height: 95vh; }
