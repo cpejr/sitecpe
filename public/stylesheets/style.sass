@@ -292,7 +292,7 @@ a
   font-size: 40px
   @media (min-width: 992px)
     font-size: 1rem
-    height: 40px
+    height: 45px
 
 .input-height-text
   height: 150px
@@ -300,6 +300,15 @@ a
   @media (min-width: 992px)
     height: 90px
     font-size: 1rem
+
+.box-form select
+  width: 100%
+  box-sizing: border-box
+  box-shadow: none
+  outline: none
+  border: none
+  border-bottom: 1px solid
+  
 
 select.form-control:not([size]):not([multiple])
   height: 70px
@@ -313,4 +322,66 @@ select.form-control:not([size]):not([multiple])
 
 .page-contact-btn
   margin: 10px 0
+
+
+.box-form h2
+  margin: 0 0 40px
+  padding: 0
+  font-weight: bold
+  text-transform: uppercase
+
+.box-form input
+  padding: 10px 0
+  margin-bottom: 30px
+
+.box-form textarea
+  height: 100px 
+  padding: 10px 0
+  margin-bottom: 40px
+
+.text-area-margin
+  margin-top: 30px
+
+.box-form input,
+.box-form textarea
+  width: 100%
+  box-sizing: border-box
+  box-shadow: none
+  outline: none
+  border: none
+  border-bottom: 1px solid
+
+
+.box-form form div
+  position: relative
+
+.box-form form div label
+  position: absolute
+  top: 10px
+  left: 13px
+  color: #999
+  transition: .5s
+  pointer-events: none
+  font-size: 40px
+  @media (min-width: 992px)
+    font-size: 22px
+
+.box-form input:focus ~ label,
+.box-form textarea:focus ~ label,
+.box-form input:valid ~ label,
+.box-form textarea:valid ~ label
+  top: -17px
+  left: 0
+  color: black
+  font-size: 25px
+  font-weight: bold
+  @media (min-width: 992px)
+    font-size: 20px
+  
+.box-form input:focus,
+.box-form textarea:focus,
+.box-form input:valid,
+.box-form textarea:valid
+  border-bottom: 2px solid
+
 // End contact --------------------------------------------------------------------------
