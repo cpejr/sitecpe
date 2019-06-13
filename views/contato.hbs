@@ -12,55 +12,61 @@
 <div class = "row">
     <div class = "col-lg-6 col-sm-12 col-md-12 order-lg-1 order-sm-2">
         <div class = "form-background">
-        <form action = "/contato" method = "post" role = "form">
-            <div class="form-group">
-                <label class = "label-form" for="Nome">Nome</label>
-                <input type="text" name = "name" class="form-control input-height" id="name" placeholder="Nome" required>
-            </div>
-             <div class="form-group">
-                <label class = "label-form" for="Email">Email</label>
-                <input type="email" name = "email" class="form-control input-height" id="email" placeholder="name@example.com" required>
-            </div>
-             <div class="form-group">
-                <label class = "label-form" for="Telefone">Telefone</label>
-                <input type="text" name = "telefone" class="form-control input-height" id="telefone" placeholder="Telefone" required>
-            </div>
-            <div class="form-group">
-                <label class = "label-form" for="Area">Área</label>
-                <select class="form-control input-height" name = "area" id="area" required>
-                <option value disabled selected>Selecione</option>
-                <option>Eletrônica</option>
-                <option>Fotovoltaico</option>
-                <option>Planta Elétrica</option>
-                <option>Sistema Web</option>
-                <option>Eficiência Energética</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class = "label-form" for="Mensagem">Como podemos ajudá-lo?</label>
-                <textarea class="form-control input-height-text" name = "text" id="text" rows="3" required></textarea>
-            </div>
+        <div class = "box-form">
+            <h2>Contate-nos!</h2>
+                <form action = "/contato" method = "post" role = "form">
+                    <div>
+                        <input type="text" name = "Nome" class = "input-height" required>
+                        <label for="">Nome</label>
+                    </div>
 
-            <div class= "container-fluid">
-            <div class = "row">
-                <div class = "col-2"></div>
-                {{!-- Mensagem de erro ou de sucesso --}}
-                <div class = "col-8 message-state"> 
-                    {{sent}}
-                </div>
-            </div>
-            </div>
+                    <div>
+                        <input type="email" class = "input-height" name = "email" required>
+                        <label for="">Email</label>
+                    </div>
 
-            <div class= "container-fluid">
-            <div class = "row">
-                <div class = "col-lg-4"></div>
-                <div class = "col-sm-12 col-lg-4 blog-btn-center page-contact-btn">
-                    <button type = "submit" class = "contact-btn blog-btn btn-block">Enviar</button>
-                </div>
-            </div>
-            </div>
-            </form>
+                    <div>
+                        <input type="text" class = "input-height" name = "telefone" required>
+                        <label for="">Telefone</label>
+                    </div>
+
+                    <div class="form-group">
+                    <select class="form-control input-height" name = "area" id="area" required>
+                        <option value disabled selected>Área</option>
+                        <option>Eletrônica</option>
+                        <option>Fotovoltaico</option>
+                        <option>Planta Elétrica</option>
+                        <option>Sistema Web</option>
+                        <option>Eficiência Energética</option>
+                    </select>
+                    </div>
+
+                    <div class = "text-area-margin" >
+                        <textarea name="texto" id="" name= "text" required></textarea>
+                        <label for="textarea">Como podemos ajudá-lo?</label>
+                    </div>
+
+                    <div class= "container-fluid">
+                        <div class = "row">
+                            <div class = "col-2"></div>
+                            {{!-- Mensagem de erro ou de sucesso --}}
+                            <div class = "col-8 message-state"> 
+                                {{sent}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class= "container-fluid">
+                        <div class = "row">
+                            <div class = "col-lg-4"></div>
+                            <div class = "col-sm-12 col-lg-4 blog-btn-center page-contact-btn">
+                                <button type = "submit" class = "contact-btn blog-btn btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
         </div>
+    </div>
     </div>
 
     <div class = "col-lg-6 col-sm-12 col-md-12 order-lg-2 order-sm-1">
