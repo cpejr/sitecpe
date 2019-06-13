@@ -18,14 +18,14 @@ router.post('/contato', (req, res, next) =>{
   const mensagem = `
     <h3> Nova mensagem de contato de cpejr.com.br </h3>
     <ul>
-    <li>De: ${contact.name} </li>
+    <li>De: ${contact.nome} </li>
     <li>Email: ${contact.email} </li>
     <li>Telefone: ${contact.telefone} </li>
     <li>Área do portfolio: ${contact.area} </li>
     </ul>
     <h3>Mensagem:</h3>
     <p>
-    ${contact.text}
+    ${contact.texto}
     </p>
   `;
   emailmandar = new EmailSend(mensagem);

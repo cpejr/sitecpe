@@ -6361,7 +6361,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase; }
 
 .box-form input {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   margin-bottom: 30px; }
 
 .box-form textarea {
