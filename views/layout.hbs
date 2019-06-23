@@ -5,8 +5,98 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   </head>
+	
   <body>
     {{{body}}}
     <script src="/javascripts/jquery.js" charset="utf-8"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>  </body>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    
+    <!-- Header and NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    	<a class="navbar-brand" href="home">
+    		<img src="/images/logo-cpe-white-text.svg" height="55" alt="">
+    	</a>
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+    			<li class="nav-item">
+    				<a class="nav-link" href="quem-somos">Quem somos</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="solucoes">Soluções</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="metodologia">Metodologia</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="cases">Cases</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="blog">Blog</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="processo-seletivo">Processo Seletivo</a>
+    			</li>
+				<form class="form-inline">
+					<button class="btn btn-outline-success" type="button">Contato</button>
+				</form>
+    		</ul>
+    	</nav> 
+
+	<!-- Footer -->
+	<footer class="container-fluid py-5 bg-dark">
+		<div class="row">
+	        <div class="col-md-3">
+	        	<h5>CPE</h5>
+	        	<ul class="list-unstyled text-small">
+	        		<li><a class="text-muted" href="#">Quem somos</a></li>
+	       		    <li><a class="text-muted" href="#">Soluções</a></li>
+	        		<li><a class="text-muted" href="#">Cases</a></li>
+	        		<li><a class="text-muted" href="#">Blog</a></li>
+	        		<li><a class="text-muted" href="#">Metodologia</a></li>
+	        	</ul>
+	        </div>
+	        <div class="col-md-3">
+	        	<h5>Processo Seletivo</h5>
+	        	<ul class="list-unstyled text-small">        		
+	        		<li><a class="text-muted" href="#">Informações</a></li>
+	        		<li><a class="text-muted" href="#">Inscrições</a></li>
+	       		    <li><a class="text-muted" href="#">Cases de Membros</a></li>
+	        	</ul>
+	        </div>
+	        <div class="col-md-6">
+	        	<h5>Se inscreva na nossa newsletter</h5>
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" id="inputEmail" placeholder="Digite o seu nome">
+				    	<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Digite o seu email">
+				  	</div>
+				 	<button type="submit" class="btn btn-primary">Quero me cadastrar</button>
+				</form>
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-md-2">
+	  			<img src="/images/logo-cpe-white-text.svg" height="75" alt="">
+	        </div>
+	        <div class="col-md-3">
+	        	<a href="#"><img src="/images/icons/facebook.svg" height="50" alt="" href="#"></a>
+	        	<a href="#"><img src="/images/icons/instagram.svg" height="50" alt="" href="#"></a>
+	        	<a href="#"><img src="/images/icons/linkedin.svg" height="50" alt="" href="#"></a>
+	        	<a href="#"><img src="/images/icons/youtube.svg" height="50" alt="" href="#"></a>
+	        </div>
+	        <div class="col-md-3">
+	      		<h5>Av. Presidente Antônio Carlos, 6627, CPDEE, sala 112, UFMG Campus Pampulha</h5>
+	      	</div>
+	      	<div class="col-md-2">
+	      		<h5>(31) 3409-6695</h5>
+	      	</div>
+	      	<div class="col-md-2">
+	      		<h5>contato@cpejr.com.br</h5>
+	        </div>
+	    </div>
+	</footer>
+  </body>
 </html>
