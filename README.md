@@ -11,6 +11,7 @@ npm install -g nodemon
 3. Caso já possua os pacotes, basta atualizá-los.
 ```
 npm i -g npm
+npm i -g nodemon
 ```
 4. Baixe o [.env](https://drive.google.com/open?id=1yhZV7sEKbbk9mvf66MGlIR2NJIsA8Les) do Drive e coloque na pasta raiz do repositório.
 5. Execute o site pelo comando ``` npm test ``` e visualize pelo link http://localhost:3000
