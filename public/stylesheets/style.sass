@@ -18,6 +18,41 @@ a
 .yellow-background
   background: linear-gradient(to bottom, #f5e722, #b8b040)
   background-attachment: fixed
+
+.title
+  font-family: 'Maven Pro', sans-serif
+  text-align: center
+  font-size: 120px
+  font-weight: bold
+  margin: 20px 0
+  padding-bottom: 10px
+  // border-width: thin
+  // border-style: solid
+  // border-top: none
+  // border-left: none
+  // border-right: none
+  z-index: 20
+  @media (min-width: 992px)
+    font-size: 50px
+
+.content
+  font-size: 50px
+  z-index: 20
+  @media (min-width: 992px)
+    font-size: 25px
+
+.maven-font
+  font-family: 'Maven Pro', sans-serif
+
+.vertical-center
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  vertical-align: middle
+  height: 100%
+
+
 //End General ------------------------------------------------------------------------------
 
 
@@ -27,7 +62,7 @@ a
 
 .projetos
   background: #F1EFEB
-  
+
 .img-slider
   width: 100vw
   height: 95vh
@@ -37,7 +72,7 @@ a
   position: relative
   /* Make the width of box same as image */
   display: inline-block
-  
+
 .box-img-slider .text-img-slider
   position: absolute
   margin: 0 auto
@@ -52,7 +87,7 @@ a
   @media (min-width: 992px)
     width: 60%
     font-size: 25px
-  
+
 .a-slider-know-more
   color: white
   font-size: 42px
@@ -214,7 +249,7 @@ a
 
 .a-text-know-more
   color: black
-  
+
 .number-who
   font-size: 70px
   text-align: center
@@ -273,7 +308,7 @@ a
   color: white
   font-family: 'Muli', sans-serif
   // A partir de 992px de largura, ele começa a exibir desse jeito
-  @media (min-width: 992px) 
+  @media (min-width: 992px)
     font-size: 25px
     padding: 70px 20px 30px 20px
 
@@ -283,15 +318,15 @@ a
   padding: 30px 40px
   border-radius: 2%
   // A partir de 992px de largura, ele começa a exibir a margin desse jeito
-  @media (min-width: 992px) 
+  @media (min-width: 992px)
     margin: 0 0 10px 60px
-    
+
 .message-state
   text-align: center
   font-family: 'Muli', sans-serif
   font-size: 35px
   border-radius: 5%
-  @media (min-width: 992px) 
+  @media (min-width: 992px)
     font-size: 25px
 
 .input-height
@@ -315,16 +350,16 @@ a
   outline: none
   border: none
   border-bottom: 1px solid
-  
+
 
 select.form-control:not([size]):not([multiple])
   height: 70px
   @media (min-width: 992px)
     height: 40px
-  
+
 .label-form
   font-size: 40px
-  @media (min-width: 992px) 
+  @media (min-width: 992px)
    font-size: 25px
 
 .page-contact-btn
@@ -342,7 +377,7 @@ select.form-control:not([size]):not([multiple])
   margin-bottom: 30px
 
 .box-form textarea
-  height: 100px 
+  height: 100px
   padding: 10px 0
   margin-bottom: 40px
 
@@ -384,7 +419,7 @@ select.form-control:not([size]):not([multiple])
   font-weight: bold
   @media (min-width: 992px)
     font-size: 20px
-  
+
 .box-form input:focus,
 .box-form textarea:focus,
 .box-form input:valid,
@@ -392,3 +427,85 @@ select.form-control:not([size]):not([multiple])
   border-bottom: 2px solid
 
 // End contact --------------------------------------------------------------------------
+
+// Solutions ------------------------------------------------------------------------------
+
+.vertical-center-solutions
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  vertical-align: middle
+  height: 60%
+  padding-top: 20vh
+
+.waveWrapper
+    overflow: hidden
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    margin: auto
+
+.waveWrapperInner
+    position: absolute
+    width: 100%
+    overflow: hidden
+    height: 100%
+    bottom: -1px
+    background-image: linear-gradient(to top, #fffe00 20%, #B5A641 80%)
+
+.bgTop
+    z-index: 15
+    opacity: 0.5
+
+.bgMiddle
+    z-index: 10
+    opacity: 0.75
+
+.bgBottom
+    z-index: 5
+
+.wave
+    position: absolute
+    left: 0
+    width: 200%
+    height: 100%
+    background-repeat: repeat no-repeat
+    background-position: 0 bottom
+    transform-origin: center bottom
+
+.waveTop
+    background-size: 50% 100px
+
+.waveAnimation .waveTop
+  animation: move-wave 3s
+   -webkit-animation: move-wave 3s
+   -webkit-animation-delay: 1s
+   animation-delay: 1s
+
+.waveMiddle
+    background-size: 50% 120px
+
+.waveAnimation .waveMiddle
+    animation: move_wave 10s linear infinite
+
+.waveBottom
+    background-size: 50% 100px
+
+.waveAnimation .waveBottom
+    animation: move_wave 15s linear infinite
+
+
+@keyframes move_wave
+  0%
+    transform: translateX(0) translateZ(0) scaleY(1)
+  50%
+    transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  100%
+    transform: translateX(-50%) translateZ(0) scaleY(1)
+
+
+
+//End Solutions ------------------------------------------------------------------------------
