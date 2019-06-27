@@ -11,6 +11,11 @@ router.get('/contato', (req, res, next) => {
   res.render('contato', {title: 'Contato'})
 });
 
+router.get('/solucoes', (req, res, next) => {
+  res.render('solutions', {title: 'Soluções'})
+});
+
+
 
 
 router.post('/contato', (req, res, next) =>{
