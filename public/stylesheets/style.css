@@ -6261,7 +6261,7 @@ a {
 .text-who-we-are {
   font-family: 'Muli', sans-serif;
   font-size: 35px;
-  padding: 10px 14vw; }
+  padding: 10px 30px; }
   @media (min-width: 992px) {
     .text-who-we-are {
       font-size: 25px; } }
@@ -6270,7 +6270,7 @@ a {
   font-family: 'Muli', sans-serif;
   font-size: 35px;
   font-weight: bold;
-  padding: 0 14vw 40px; }
+  padding: 0 30px 40px; }
   @media (min-width: 992px) {
     .text-know-more {
       font-size: 25px; } }
