@@ -13,9 +13,9 @@
         });
     };
     $.fn.autogrow.resize = function(textarea) {
-        var lineHeight = parseInt($(textarea).css('line-height'), 10);
+        var lineHeight = parseInt($(textarea).css('line-height'), 11);
         var lines = textarea.value.split('\n');
-        var columns = 55;
+        var columns = textarea.cols * 2.7;
         var lineCount = 0;
         $.each(lines, function() {
             lineCount += Math.ceil(this.length / columns) || 1;
