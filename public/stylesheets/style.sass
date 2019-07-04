@@ -429,6 +429,25 @@ select.form-control:not([size]):not([multiple])
 .box-form textarea:valid
   border-bottom: 2px solid
 
+
+//Para o script de aumentar as linhas do text area
+#test 
+  line-height: 1.4
+
+//Para deixar o select igual ao outros inputs 1
+.select-contact
+  border-radius: 0
+  font-size: 22px
+//Para deixar o select igual ao outros inputs 2
+.select-contact:valid
+  font-size: 25px
+  color: black
+  font-weight: bold
+  padding-left: 0
+  border-bottom: 2px solid
+  @media (min-width: 992px)
+    font-size: 20px
+
 // End contact --------------------------------------------------------------------------
 
 // Solutions ------------------------------------------------------------------------------
@@ -534,6 +553,3 @@ select.form-control:not([size]):not([multiple])
 
 
 //End Nav bar --------------------------------------------------------------------------
-
-#test 
-  line-height: 1.4

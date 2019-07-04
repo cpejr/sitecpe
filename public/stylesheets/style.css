@@ -6457,6 +6457,23 @@ select.form-control:not([size]):not([multiple]) {
 .box-form textarea:valid {
   border-bottom: 2px solid; }
 
+#test {
+  line-height: 1.4; }
+
+.select-contact {
+  border-radius: 0;
+  font-size: 22px; }
+
+.select-contact:valid {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  padding-left: 0;
+  border-bottom: 2px solid; }
+  @media (min-width: 992px) {
+    .select-contact:valid {
+      font-size: 20px; } }
+
 .vertical-center-solutions {
   display: flex;
   flex-wrap: wrap;
@@ -6551,8 +6568,5 @@ select.form-control:not([size]):not([multiple]) {
     .nav-cpe-dimensions {
       height: 63px;
       width: 160px; } }
-
-#test {
-  line-height: 1.4; }
 
 /*# sourceMappingURL=style.css.map */
