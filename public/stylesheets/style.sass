@@ -138,7 +138,7 @@ a
   font-weight: 600
   border: none
   display: inline-block
-  font-size: 2rem
+  font-size: 2.3rem
   font-family: 'Muli', sans-serif
   background: linear-gradient(to right, #7f26bf 0%,#9926c0 100%)
   color: white
@@ -238,7 +238,7 @@ a
 .text-who-we-are
   font-family: 'Muli', sans-serif
   font-size: 35px
-  padding: 10px 14vw
+  padding: 10px 30px
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
     font-size: 25px
 
@@ -246,7 +246,7 @@ a
   font-family: 'Muli', sans-serif
   font-size: 35px
   font-weight: bold
-  padding: 0 14vw 40px
+  padding: 0 30px 40px
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
     font-size: 25px
 
@@ -429,6 +429,25 @@ select.form-control:not([size]):not([multiple])
 .box-form textarea:valid
   border-bottom: 2px solid
 
+
+//Para o script de aumentar as linhas do text area
+#test 
+  line-height: 1.4
+
+//Para deixar o select igual ao outros inputs 1
+.select-contact
+  border-radius: 0
+  font-size: 22px
+//Para deixar o select igual ao outros inputs 2
+.select-contact:valid
+  font-size: 25px
+  color: black
+  font-weight: bold
+  padding-left: 0
+  border-bottom: 2px solid
+  @media (min-width: 992px)
+    font-size: 20px
+
 // End contact --------------------------------------------------------------------------
 
 // Solutions ------------------------------------------------------------------------------
@@ -534,6 +553,3 @@ select.form-control:not([size]):not([multiple])
 
 
 //End Nav bar --------------------------------------------------------------------------
-
-#test 
-  line-height: 1.4
