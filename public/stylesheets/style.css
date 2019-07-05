@@ -6418,7 +6418,8 @@ select.form-control:not([size]):not([multiple]) {
   box-shadow: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+  border-color: #999; }
 
 .box-form form div {
   position: relative; }
@@ -6462,7 +6463,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .select-contact {
   border-radius: 0;
-  font-size: 22px; }
+  font-size: 22px;
+  color: #999; }
 
 .select-contact:valid {
   font-size: 25px;
