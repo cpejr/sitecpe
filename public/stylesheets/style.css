@@ -6573,11 +6573,13 @@ select.form-control:not([size]):not([multiple]) {
 
 .btn-to-contact {
   background-color: #f5e722;
+  border-color: #f5e722;
   color: black;
   border-radius: 40px; }
 
 .btn-to-contact:hover {
   background-color: #b8b040;
+  border-color: #b8b040;
   color: black; }
 
 .footer-item {
