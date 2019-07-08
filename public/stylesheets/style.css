@@ -6317,24 +6317,20 @@ a {
   min-height: 100vh; }
 
 .side-contact-text {
-  padding: 50px 60px;
   font-size: 50px;
   color: white;
   font-family: "Muli", sans-serif; }
   @media (min-width: 992px) {
     .side-contact-text {
-      font-size: 40px;
-      padding: 50px 20px; } }
+      font-size: 40px; } }
 
 .side-contact-text-2 {
-  padding: 0 60px 60px 60px;
   font-size: 35px;
   color: white;
   font-family: 'Muli', sans-serif; }
   @media (min-width: 992px) {
     .side-contact-text-2 {
-      font-size: 25px;
-      padding: 70px 20px 30px 20px; } }
+      font-size: 25px; } }
 
 .form-background {
   background-color: white;
@@ -6476,6 +6472,9 @@ select.form-control:not([size]):not([multiple]) {
   @media (min-width: 992px) {
     .select-contact:valid {
       font-size: 20px; } }
+
+.foto-consultor {
+  padding: 0; }
 
 .vertical-center-solutions {
   display: flex;
