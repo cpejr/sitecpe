@@ -6464,7 +6464,8 @@ select.form-control:not([size]):not([multiple]) {
 .select-contact {
   border-radius: 0;
   font-size: 22px;
-  color: #999; }
+  color: #999;
+  margin-bottom: 50px; }
 
 .select-contact:valid {
   font-size: 25px;
