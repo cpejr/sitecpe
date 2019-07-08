@@ -15,17 +15,17 @@
         <div class = "box-form">
                 <form action = "/contato" method = "post" role = "form">
                     <div>
-                        <input type="text" name = "nome" class = "input-height" required>
+                        <input value="{{contact.nome}}" type="text" name = "nome" class = "input-height" required>
                         <label for="">Nome</label>
                     </div>
 
                     <div>
-                        <input type="email" class = "input-height" name = "email" required>
+                        <input value="{{contact.email}}" type="email" class = "input-height" name = "email" required>
                         <label for="">Email</label>
                     </div>
 
                     <div>
-                        <input type="text" class = "input-height" name = "telefone" required>
+                        <input value="{{contact.telefone}}" type="text" class = "input-height" name = "telefone" required>
                         <label for="">Telefone</label>
                     </div>
 
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class = "text-area-margin" >
-                        <textarea name="texto" id="test" name= "text" required></textarea>
+                        <textarea name="texto" id="test" required>{{contact.texto}}</textarea>
                         <label for="textarea">Como podemos ajudá-lo?</label>
                     </div>
 
@@ -79,6 +79,25 @@
                preencher o formulário ao lado que nós entraremos
                 em contato com você.
 
+        </div>
+        <div class = "container-fluid">
+            <div class = "row">
+            <div class = "col-2"></div>
+            <div class = "foto-consultor col-4">
+                <img src="/images/Consultor1.png" class = "img-fluid">
+            </div>
+            <div class = "foto-consultor col-4">
+                <img src="/images/Consultor2.png" class = "img-fluid">
+            </div>
+            <div class = "col-2"></div>
+            <div class = "col-2"></div>
+            <div class = "foto-consultor col-4">
+                <img src="/images/Consultor3.png" class = "img-fluid">
+            </div>
+            <div class = "foto-consultor col-4">
+                <img src="/images/Consultor4.png" class = "img-fluid">
+            </div>
+            </div>
         </div>
     </div>
 </div>
