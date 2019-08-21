@@ -6355,6 +6355,14 @@ a {
   h1 {
     font-size: 24px; } }
 
+.card-deck {
+  padding: 60px;
+  margin-top: 100px;
+  margin-bottom: 150px; }
+
+.card {
+  height: 500px; }
+
 .contact-title {
   font-family: 'Maven Pro', sans-serif;
   text-align: center;
