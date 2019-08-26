@@ -6041,7 +6041,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 body {
-  font: 20px 'Muli', sans-serif;
+  font: 20px 'open-sans', sans-serif;
   margin-top: 116px; }
   @media (min-width: 992px) {
     body {
@@ -6085,7 +6085,7 @@ a {
   height: 100%; }
 
 .projetos {
-  background: #F1EFEB; }
+  background: #EBDB15; }
 
 .img-slider {
   width: 100vw;
@@ -6119,6 +6119,54 @@ a {
   @media (min-width: 992px) {
     .a-slider-know-more {
       font-size: 27px; } }
+
+.home-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-bottom: 0px;
+  border-width: thin;
+  border-style: none;
+  border-top: none;
+  padding: 10px 30px;
+  border-right: none; }
+  @media (max-width: 992px) {
+    .home-title {
+      text-align: center;
+      font-size: 60px; } }
+
+.home-text {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  padding: 10px 30px; }
+  @media (max-width: 992px) {
+    .home-text {
+      font-size: 45px;
+      text-align: center; } }
+
+.home-btn {
+  border-radius: 40px;
+  font-weight: 250;
+  border: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-family: 'Muli', sans-serif;
+  background: #5B84E6;
+  color: white;
+  padding: 11px 0;
+  width: 30%;
+  margin: 30px;
+  background: #5B84E6; }
+  @media (max-width: 992px) {
+    .home-btn {
+      font-size: 2.5rem;
+      width: 30%;
+      margin-left: 8.5em; } }
+
+.image {
+  width: 550px;
+  margin-left: -1em; }
 
 .blog-background {
   min-height: 95vh; }
