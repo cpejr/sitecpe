@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro|Muli|Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro|open-sans|Muli|Oxygen&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6701,11 +6701,16 @@ select.form-control:not([size]):not([multiple]) {
   color: black; }
 
 .footer-item {
-  font-size: 35px;
+  font-size: 20px;
   color: white;
-  padding-top: 20px; }
-  @media (min-width: 992px) {
-    .footer-item {
-      font-size: 25px; } }
+  padding-top: 20px;
+  font-family: 'Maven Pro', sans-serif; }
+
+.footer-link {
+  font-size: 16px;
+  font: 20px 'open-sans', sans-serif; }
+
+.bg-black {
+  background-color: #000000 !important; }
 
 /*# sourceMappingURL=style.css.map */
