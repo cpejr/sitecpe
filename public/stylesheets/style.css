@@ -6728,12 +6728,23 @@ select.form-control:not([size]):not([multiple]) {
       font-size: 20px; } }
 
 .nav-cpe-dimensions {
-  height: 100px;
-  width: 254px; }
+  height: 90px;
+  width: 254px;
+  margin-top: -22px; }
   @media (min-width: 992px) {
     .nav-cpe-dimensions {
-      height: 63px;
+      height: 90px;
       width: 160px; } }
+
+.header_style {
+  background-color: #EBDB15;
+  color: black;
+  text-align: center;
+  font-size: 90px;
+  position: fixed;
+  padding: 1px 10px;
+  width: 100%;
+  transition: 0.2s; }
 
 .btn-to-contact {
   background-color: #f5e722;
