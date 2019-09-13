@@ -1,7 +1,7 @@
 @import ../bootstrap/scss/bootstrap.scss
 
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro|open-sans|Oxygen&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Muli|open-sans|Oxygen&display=swap')
 
 // Para google fontes -> use:
 // font-family: 'open-sans', sans-serif
@@ -759,17 +759,99 @@ select.form-control:not([size]):not([multiple])
   color: black
   border-radius: 40px
 
-
 .btn-to-contact:hover
   background-color: #b8b040
   border-color: #b8b040
   color: black
 
 .footer-item
-  font-size: 35px
-  color: white
+  font-size: 20px
+  color: #5B84E6 !important
   padding-top: 20px
-  @media (min-width: 992px)
-    font-size: 25px
+  font-family: 'Maven Pro', sans-serif
+
+.footer-link
+  font-size: 16px
+  font: 20px 'open-sans', sans-serif
+  color: rgb(247, 248, 249) !important
+  opacity: 0.85
+
+.bg-black
+  background-color: #19191B !important
+  @media screen and (max-device-width: 480px)
+    text-align: center
+    
+.line-footer
+  background-color: #F7F8F9
+  opacity: 0.29
+.footer-span
+  font-size: 14px
+  color: rgb(247, 248, 249)
+  opacity: 0.85
+
+.social-icon
+  width: 38px
+  height: 38px
+
+.social-icon li
+  vertical-align: top
+  display: inline
 
 //END Header and footer --------------------------------------------------------------------------------------
+
+//Start WhatsApp Button --------------------------------------------------------------------------------------
+
+.label-container
+	position: fixed
+	bottom: 48px
+	right: 105px
+	display: table
+	visibility: hidden
+
+
+.label-text
+	color: #25283d
+	background: rgba(37,40,61,0.3)
+	display: table-cell
+	vertical-align: middle
+	padding: 10px
+	border-radius: 3px
+  font-color: 19191B
+
+
+.label-arrow
+	display: table-cell
+	vertical-align: middle
+	color: #333
+	opacity: 1
+
+
+.float
+	position: fixed
+	width: 60px
+	height: 60px
+	bottom: 40px
+	right: 40px
+	background-color: #25D366
+	color: #FFF
+	border-radius: 50px
+	text-align: center
+	box-shadow: 2px 2px 1px #808080
+
+
+.my-float
+	font-size: 40px
+	margin-top: 10px
+
+
+a.float + div.label-container
+  visibility: hidden
+  opacity: 0
+  transition: visibility 0s, opacity 0.5s ease
+
+
+a.float:hover + div.label-container
+  visibility: visible
+  opacity: 1
+
+//END WhatsApp Button --------------------------------------------------------------------------------------
