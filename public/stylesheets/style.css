@@ -6139,7 +6139,8 @@ a {
 .home-text {
   font-family: 'open-sans', sans-serif;
   font-size: 18px;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+  opacity: 0.85; }
   @media (max-width: 992px) {
     .home-text {
       font-size: 45px;
@@ -6236,7 +6237,8 @@ a {
 .blog-text {
   font-family: 'open-sans', sans-serif;
   font-size: 40px;
-  margin: 0 0 40px 0; }
+  margin: 0 0 40px 0;
+  opacity: 0.85; }
   @media (min-width: 992px) {
     .blog-text {
       font-size: 25px; } }
@@ -6271,6 +6273,7 @@ a {
   font-size: 55px;
   color: #25283D;
   font-family: 'open-sans', sans-serif;
+  opacity: 0.85;
   text-align: center;
   padding: 10px 100px; }
   @media (min-width: 992px) {
@@ -6293,7 +6296,8 @@ a {
 .metodology-text {
   font-family: 'open-sans', sans-serif;
   font-size: 40px;
-  margin: 0 0 40px 0; }
+  margin: 0 0 40px 0;
+  opacity: 0.85; }
   @media (min-width: 992px) {
     .metodology-text {
       font-size: 25px; } }
@@ -6351,6 +6355,7 @@ a {
 .text-who-we-are {
   font-family: 'open-sans', sans-serif;
   font-size: 35px;
+  opacity: 0.85;
   margin-left: 60px;
   margin-right: 60px;
   padding: 10px 30px; }
@@ -6362,6 +6367,7 @@ a {
   font-family: 'open-sans', sans-serif;
   font-size: 35px;
   font-weight: bold;
+  opacity: 0.85;
   margin-left: 55px;
   padding: 0 30px 40px; }
   @media (min-width: 992px) {
@@ -6483,6 +6489,7 @@ a {
 .side-contact-text {
   font-size: 50px;
   color: #25283D;
+  opacity: 0.85;
   font-family: "open-sans", sans-serif; }
   @media (min-width: 992px) {
     .side-contact-text {
@@ -6491,7 +6498,8 @@ a {
 .side-contact-text-2 {
   font-size: 35px;
   color: #25283D;
-  font-family: 'open-sans', sans-serif; }
+  font-family: 'open-sans', sans-serif;
+  opacity: 0.85; }
   @media (min-width: 992px) {
     .side-contact-text-2 {
       font-size: 25px; } }
@@ -6509,7 +6517,8 @@ a {
   text-align: center;
   font-family: 'open-sans', sans-serif;
   font-size: 35px;
-  border-radius: 5%; }
+  border-radius: 5%;
+  opacity: 0.85; }
   @media (min-width: 992px) {
     .message-state {
       font-size: 25px; } }
@@ -6737,7 +6746,7 @@ select.form-control:not([size]):not([multiple]) {
       width: 160px; } }
 
 .header_style {
-  background-color: #EBDB15;
+  background-color: #25283D;
   color: black;
   text-align: center;
   font-size: 90px;
@@ -6766,8 +6775,8 @@ select.form-control:not([size]):not([multiple]) {
 .footer-link {
   font-size: 16px;
   font: 20px 'open-sans', sans-serif;
-  color: #f7f8f9 !important;
-  opacity: 0.85; }
+  opacity: 0.85;
+  color: #f7f8f9 !important; }
 
 .bg-black {
   background-color: #19191B !important; }
