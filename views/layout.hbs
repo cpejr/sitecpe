@@ -12,7 +12,7 @@
     <script src="/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
 
     <!-- Header and NavBar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark header_style">
 		<div class = "nav-cpe-dimensions">
 			<a href="/"> <img class = "img-fluid" src="/images/logo-cpe-white-text.svg"> </a>
     	{{!-- <a class="navbar-brand" href="/">
@@ -53,30 +53,48 @@
     		</ul>
     	</nav>
 
+      <!-- WhatsApp Button-->
+      <a href="https://api.whatsapp.com/send?phone=553134096695&text" target="_blank" class="float">
+              <i class="fa fa-whatsapp my-float fa-2x"></i>
+          </a>
+
+
 	<!-- Footer -->
-	<footer class="container-fluid py-5 bg-dark">
+	<footer class="container-fluid py-5 bg-black">
 		<div class="row">
+
+        <div class="footer-item col-lg-3 col-sm-6">
+        <img class = "footer-logo" src="/images/logo-cpe-white-text.svg">
+        </div>
 	        <div class="footer-item col-lg-3 col-sm-12">
 	        	<div>CPE</div>
-	        	<ul class="list-unstyled text-small">
-	        		<li><a class="text-muted" href="#">Quem somos</a></li>
-	       		    <li><a class="text-muted" href="#">Soluções</a></li>
-	        		<li><a class="text-muted" href="#">Cases</a></li>
-	        		<li><a class="text-muted" href="#">Blog</a></li>
-	        		<li><a class="text-muted" href="#">Metodologia</a></li>
+	        	<ul class="list-unstyled">
+	        		<li><a class="text-muted footer-link" href="#">Home</a></li>
+	       		    <li><a class="text-muted footer-link" href="#">Contato</a></li>
+	        		<li><a class="text-muted footer-link" href="#">Processo Seletivo</a></li>
+	        		<li><a class="text-muted footer-link" href="#">Blog</a></li>
 	        	</ul>
 	        </div>
-	        <div class="footer-item col-lg-4 col-sm-12">
-	        	<div>Processo Seletivo</div>
+	        <div class="footer-item col-lg-3 col-sm-12">
+	        	<div>Telefone e WhatsApp</div>
 	        	<ul class="list-unstyled text-small">
-	        		<li><a class="text-muted" href="#">Informações</a></li>
-	        		<li><a class="text-muted" href="#">Inscrições</a></li>
-	       		    <li><a class="text-muted" href="#">Cases de Membros</a></li>
+	        		<li><a class="text-muted footer-link" href="https://api.whatsapp.com/send?phone=553134096695&text">(31) 3409-6695</a></li>
 	        	</ul>
+            <div>Email</div>
+	        	<ul class="list-unstyled text-small">
+	        		<li><a class="text-muted footer-link" href="mailto:contato@cpejr.com.br">contato@cpejr.com.br</a></li>
+	        	</ul>
+            <div>Endereço</div>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted footer-link" href="#">Av. Presidente Antônio Carlos, 6627,<br>UFMG Campus Pampulha,<br> Prédio Inova, Bairro Pampulha,<br>Belo Horizonte - MG </a></li>
+            </ul>
 	        </div>
-			<div class="footer-item col-lg-5 col-sm-12">
-				<div>(31) 3409-6695</div>
-				<div>contato@cpejr.com.br</div>
+			<div class="footer-item col-lg-3 col-sm-12">
+        <div>Créditos</div>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted footer-link" href="#">Ilustrações obtidas em freepik.com</a></li>
+        </ul>
+      </div>
 			</div>
 	        {{!-- <div class="col-md-6">
 	        	<h5>Se inscreva na nossa newsletter</h5>
@@ -89,21 +107,31 @@
 				</form>
 	        </div> --}}
 	    </div>
-	    <div class="row">
-	    	<div class="footer-item col-lg-3 col-sm-6">
-	  			<img class = "img-fluid" src="/images/logo-cpe-white-text.svg">
-	        </div>
-	        <div class="footer-item col-lg-4 col-sm-6">
-	        	<a href="#"><img src="/images/icons/facebook.svg" height="50" alt="" href="#"></a>
-	        	<a href="#"><img src="/images/icons/instagram.svg" height="50" alt="" href="#"></a>
-	        	<a href="#"><img src="/images/icons/linkedin.svg" height="50" alt="" href="#"></a>
-	        	<a href="#"><img src="/images/icons/youtube.svg" height="50" alt="" href="#"></a>
-	        </div>
-	        <div class="footer-item col-lg-3 col-sm-12">
-	      		<div>Av. Presidente Antônio Carlos, 6627, CPDEE, sala 112, UFMG Campus Pampulha</div>
-	      	</div>
-	        </div>
-	    </div>
+	    <hr class="line-footer">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+      <span class="footer-span">© 2019 Consultoria e Projetos Elétricos Júnior. Todos os direitos reservados.</span>
+    </div>
+
+    <div class="col-lg-4 col-sm-6">
+      </div>
+<!--      <div class="col-lg-2 col-sm-6">
+        <ul>
+          <li>
+        <img class = "social-icon" src="/images/yellow_fb.svg">
+      </li>
+        <li>
+        <img class = "social-icon" src="/images/yellow_ln.svg">
+      </li>
+        <li>
+        <img class = "social-icon" src="/images/yellow_insta.svg">
+      </li>
+    </ul>
+  </div>   -->
+      </div>
+    </div>
 	</footer>
   </body>
 </html>
+
+<script type="text/javascript" src="/javascripts/header-transition.js">  </script>

@@ -1,7 +1,7 @@
 @import ../bootstrap/scss/bootstrap.scss
 
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro|open-sans|Oxygen&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Muli|open-sans|Oxygen&display=swap')
 
 // Para google fontes -> use:
 // font-family: 'open-sans', sans-serif
@@ -13,6 +13,7 @@ body
   margin-top: 116px
   @media (min-width: 992px)
     margin-top: 79px
+
 
 
 a
@@ -122,6 +123,7 @@ a
   padding: 10px 30px
   justify-content: left
   line-height: 33px
+  opacity: 0.85
   @media (max-width: 992px)
     font-size: 45px
     text-align: center
@@ -219,6 +221,7 @@ a
   font-family: 'open-sans', sans-serif
   font-size: 40px
   margin: 0 0 40px 0
+  opacity: 0.85
   @media (min-width: 992px)
     font-size: 25px
 
@@ -253,6 +256,7 @@ a
   font-size: 55px
   color: #25283D
   font-family: 'open-sans', sans-serif
+  opacity: 0.85
   text-align: center
   padding: 10px 100px
   @media (min-width: 992px)
@@ -276,6 +280,7 @@ a
   font-family: 'open-sans', sans-serif
   font-size: 40px
   margin: 0 0 40px 0
+  opacity: 0.85
   @media (min-width: 992px)
     font-size: 25px
 
@@ -332,6 +337,7 @@ a
 .text-who-we-are
   font-family: 'open-sans', sans-serif
   font-size: 35px
+  opacity: 0.85
   margin-left: 60px
   margin-right: 60px
   padding: 10px 30px
@@ -342,6 +348,7 @@ a
   font-family: 'open-sans', sans-serif
   font-size: 35px
   font-weight: bold
+  opacity: 0.85
   margin-left: 55px
   padding: 0 30px 40px
   @media (min-width: 992px) // A partir de 992px de largura, ele começa a exibir desse jeito
@@ -480,6 +487,7 @@ a
   // padding: 50px 60px
   font-size: 50px
   color: #25283D
+  opacity: 0.85
   font-family: 'open-sans', sans-serif
    // A partir de 992px de largura, ele começa a exibir desse jeito
   @media (min-width: 992px)
@@ -491,6 +499,7 @@ a
   font-size: 35px
   color: #25283D
   font-family: 'open-sans', sans-serif
+  opacity: 0.85
   // A partir de 992px de largura, ele começa a exibir desse jeito
   @media (min-width: 992px)
     font-size: 25px
@@ -510,6 +519,7 @@ a
   font-family: 'open-sans', sans-serif
   font-size: 35px
   border-radius: 5%
+  opacity: 0.85
   @media (min-width: 992px)
     font-size: 25px
 
@@ -823,10 +833,11 @@ select.form-control:not([size]):not([multiple])
     font-size: 20px
 
 .nav-cpe-dimensions
-  height: 100px
+  height: 90px
   width: 254px
+  margin-top: -22px
   @media (min-width: 992px)
-    height: 63px
+    height: 90px
     width: 160px
 
 
@@ -834,12 +845,24 @@ select.form-control:not([size]):not([multiple])
 
 
 //Header and footer --------------------------------------------------------------------------------------
+
+.header_style
+  background-color: #25283D
+  color: black
+  text-align: center
+  font-size: 90px
+  position: fixed
+  padding: 1px 10px
+  width: 100%
+  transition: 0.2s
+
+
+
 .btn-to-contact
   background-color: #f5e722
   border-color: #f5e722
   color: black
   border-radius: 40px
-
 
 .btn-to-contact:hover
   background-color: #b8b040
@@ -847,10 +870,93 @@ select.form-control:not([size]):not([multiple])
   color: black
 
 .footer-item
-  font-size: 35px
-  color: white
+  font-size: 20px
+  color: #5B84E6 !important
   padding-top: 20px
-  @media (min-width: 992px)
-    font-size: 25px
+  font-family: 'Maven Pro', sans-serif
+
+.footer-link
+  font-size: 16px
+  font: 20px 'open-sans', sans-serif
+  opacity: 0.85
+  color: rgb(247, 248, 249) !important
+
+.bg-black
+  background-color: #19191B !important
+  @media screen and (max-device-width: 480px)
+    text-align: center
+
+.line-footer
+  background-color: #F7F8F9
+  opacity: 0.29
+.footer-span
+  font-size: 14px
+  color: rgb(247, 248, 249)
+  opacity: 0.85
+
+.social-icon
+  width: 38px
+  height: 38px
+
+.social-icon li
+  vertical-align: top
+  display: inline
 
 //END Header and footer --------------------------------------------------------------------------------------
+
+//Start WhatsApp Button --------------------------------------------------------------------------------------
+
+.label-container
+	position: fixed
+	bottom: 48px
+	right: 105px
+	display: table
+	visibility: hidden
+
+
+.label-text
+	color: #25283d
+	background: rgba(37,40,61,0.3)
+	display: table-cell
+	vertical-align: middle
+	padding: 10px
+	border-radius: 3px
+  font-color: 19191B
+
+
+.label-arrow
+	display: table-cell
+	vertical-align: middle
+	color: #333
+	opacity: 1
+
+
+.float
+	position: fixed
+	width: 60px
+	height: 60px
+	bottom: 40px
+	right: 40px
+	background-color: #25D366
+	color: #FFF
+	border-radius: 50px
+	text-align: center
+	box-shadow: 2px 2px 1px #808080
+
+
+.my-float
+	font-size: 40px
+	margin-top: 10px
+
+
+a.float + div.label-container
+  visibility: hidden
+  opacity: 0
+  transition: visibility 0s, opacity 0.5s ease
+
+
+a.float:hover + div.label-container
+  visibility: visible
+  opacity: 1
+
+//END WhatsApp Button --------------------------------------------------------------------------------------
