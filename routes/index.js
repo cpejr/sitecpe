@@ -19,6 +19,10 @@ router.get('/solucoes', (req, res, next) => {
   res.render('solutions', {title: 'Soluções'})
 });
 
+router.get('/erro', (req, res, next) => {
+  res.render('error', {title: 'Erro!'})
+});
+
 
 
 
