@@ -6043,7 +6043,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font: 20px 'open-sans', sans-serif;
-  margin-top: 116px; }
+  margin-top: 116px;
+  background-color: #F7F8F9; }
   @media (min-width: 992px) {
     body {
       margin-top: 79px; } }
@@ -6185,7 +6186,8 @@ a {
   border-width: thin;
   border-style: none;
   border-top: none;
-  border-right: none; }
+  border-right: none;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .home-title-whoweare {
       text-align: center;
@@ -6195,7 +6197,8 @@ a {
   font-family: 'open-sans', sans-serif;
   font-size: 18px;
   padding-right: 5em;
-  opacity: 0.85; }
+  opacity: 0.85;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .home-text-whoweare {
       font-size: 45px;
@@ -6211,7 +6214,8 @@ a {
   border-style: none;
   border-top: none;
   padding-left: 2em;
-  border-right: none; }
+  border-right: none;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .home-title-awards {
       text-align: center;
@@ -6223,7 +6227,8 @@ a {
   padding-left: 5em;
   padding-right: 4em;
   padding-top: 2em;
-  opacity: 0.85; }
+  opacity: 0.85;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .home-text-awards {
       font-size: 45px;
@@ -6259,14 +6264,16 @@ a {
 .image-premio {
   width: 550px;
   margin-top: -8em;
-  margin-left: 8em; }
+  margin-left: 8em;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .image-premio {
       margin-left: 12em; } }
 
 .image-quebra-cabeca {
   width: 450px;
-  margin-left: 6em; }
+  margin-left: 6em;
+  background-color: #F7F8F9; }
   @media (max-width: 992px) {
     .image-quebra-cabeca {
       margin-left: 12em; } }
@@ -6969,8 +6976,9 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 18px; }
   @media (max-width: 992px) {
     .error-title {
-      font-size: 100px;
+      font-size: 60px;
       text-align: center;
+      margin-top: 1em;
       justify-content: center;
       line-height: 50px; } }
 
@@ -6984,10 +6992,12 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 18px; }
   @media (max-width: 992px) {
     .error-text {
-      font-size: 55px;
+      font-size: 44px;
       text-align: center;
-      margin-left: 0em;
-      justify-content: center;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      margin-top: 1.5em;
+      text-align: center;
       line-height: 70px; } }
 
 .image-error {
@@ -6996,7 +7006,9 @@ select.form-control:not([size]):not([multiple]) {
   width: 700px; }
   @media (max-width: 992px) {
     .image-error {
-      margin-left: 0.3em; } }
+      width: 1500px;
+      margin-left: 1em;
+      margin-top: 1em; } }
 
 .wrapper {
   padding: 0px;
