@@ -23,6 +23,10 @@ router.get('/erro', (req, res, next) => {
   res.render('error', {title: 'Erro!'})
 });
 
+router.get('/sucesso', (req, res, next) => {
+  res.render('sucesso', {title: 'Sucesso'})
+});
+
 
 
 
@@ -53,6 +57,7 @@ router.post('/contato', (req, res, next) =>{
       console.log(error);
       res.render('contato', { title: 'Contato', contact, sent: 'Erro no envio da mensagem'});
     });
+    res.redirect('/sucesso');
   });
 
 
