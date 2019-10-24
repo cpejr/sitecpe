@@ -1,0 +1,19 @@
+<br><br>
+<h1>Obrigado pelo contato</h1>
+<script type="text/javascript">
+//alert(window.location.protocol + "//" + window.location.host + "/" +"sucesso?w");
+//alert(document.URL);
+if(document.URL==window.location.protocol + "//" + window.location.host + "/" +"sucesso?w"){
+  //alert(screen.width);
+  setTimeout(function(){
+    if (screen.width<=480) {
+        window.location="https://api.whatsapp.com/send?phone=553134096695&text";
+    } else {
+      window.location="https://web.whatsapp.com/send?phone=553134096695&text";
+    }
+  }, 3000);
+}else {
+  alert("else");
+}
+
+</script>
