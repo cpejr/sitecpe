@@ -7227,6 +7227,9 @@ select.form-control:not([size]):not([multiple]) {
   vertical-align: top;
   display: inline; }
 
+.cttBtn {
+  margin-top: -15px; }
+
 .label-container {
   position: fixed;
   bottom: 48px;

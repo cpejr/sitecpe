@@ -47,7 +47,7 @@
     			</li>
     		</ul>
 			<ul class="navbar-nav ml-auto nav-bar-style">
-				<form class="form-inline">
+				<form id="cttBtn" class="form-inline">
 					<a href="/contato"><button class="btn btn-to-contact btn-success" type="button">Contato</button></a>
 				</form>
     		</ul>
@@ -141,12 +141,13 @@ function myFunction() {
     document.getElementById("navB").className = "navbar navbar-expand-lg fixed-top navbar-yellow";
     document.getElementById("log").src ="/images/logo-black.png";
     document.getElementById("log").className = "img-fluid logsize";
-
+	document.getElementById("cttBtn").className = "form-inline cttBtn";
 
   } else {
     document.getElementById("navB").className = "navbar navbar-expand-lg fixed-top navbar-dark header_style";
     document.getElementById("log").src ="/images/logo-cpe-white-text.svg";
     document.getElementById("log").className = "img-fluid";
+	document.getElementById("cttBtn").className = "form-inline";
 
 
   }
