@@ -12,8 +12,10 @@
 body
   font: 20px 'open-sans', sans-serif
   margin-top: 116px
+  overflow-x: hidden
+  padding: 0px !important
   @media (min-width: 992px)
-    margin-top: 79px
+    margin-top: 50px
 
 
 
@@ -27,6 +29,7 @@ a
 .yellow-background
   background: linear-gradient(to bottom, #f5e722, #b8b040)
   background-attachment: fixed
+  overflow: hidden
 
 .title
   font-family: 'Maven Pro', sans-serif
@@ -41,12 +44,14 @@ a
   // border-left: none
   // border-right: none
   z-index: 20
+  overflow: hidden
   @media (min-width: 992px)
     font-size: 50px
 
 .content
   font-size: 50px
   z-index: 20
+  overflow: hidden
   @media (min-width: 992px)
     font-size: 25px
 
@@ -60,6 +65,7 @@ a
   align-items: center
   justify-content: center
   vertical-align: middle
+  overflow: hidden
   height: 100%
 
 
@@ -73,38 +79,7 @@ a
 
 .projetos
   background: #EBDB15
-
-.img-slider
-  width: 100vw
-  height: 95vh
-  object-fit: cover
-
-.box-img-slider
-  position: center
-  /* Make the width of box same as image */
-  display: inline-block
-
-
-.box-img-slider .text-img-slider
-  position: absolute
-  margin: 0 auto
-  left: 0
-  right: 0
-  /* Adjust this value to move the positioned div up and down */
-  top: 75%
-  color: white
-  /* Set the width of the positioned div */
-  width: 100%
-  font-size: 40px
-  @media (min-width: 992px)
-    width: 60%
-    font-size: 25px
-
-.a-slider-know-more
-  color: white
-  font-size: 42px
-  @media (min-width: 992px)
-    font-size: 27px
+  overflow: hidden
 
 .home-title
   font-family: 'Maven Pro', sans-serif
@@ -115,8 +90,10 @@ a
   border-width: thin
   border-style: none
   border-top: none
-  padding: 10px 30px
+  padding-left: 2.3em
   border-right: none
+  overflow: hidden
+
   @media (max-width: 992px)
     text-align: center
     font-size: 60px
@@ -126,8 +103,10 @@ a
   font-size: 18px
   padding: 10px 30px
   justify-content: left
+  padding-left: 5em
   line-height: 33px
   opacity: 0.85
+  overflow: hidden
   @media (max-width: 992px)
     font-size: 45px
     text-align: center
@@ -220,6 +199,7 @@ a
   width: 30%
   margin: 25px
   margin-left: 0em
+  overflow: hidden
   @media (max-width: 992px)
     font-size: 2.5rem
     width: 40%
@@ -228,20 +208,23 @@ a
 
 .image-foguete
   width: 550px
+  overflow: hidden
   margin-left: 1em
   @media (max-width: 992px)
     margin-left: 12em
 
 .image-premio
-  width: 550px
-  margin-top: -8em
-  margin-left: 8em
+  width: 500px
+  margin-left: 5em
+  margin-top: 3em
+  overflow: hidden
   @media (max-width: 992px)
     margin-left: 12em
 
 .image-quebra-cabeca
   width: 450px
   margin-left: 6em
+  overflow: hidden
   @media (max-width: 992px)
     margin-left: 12em
 
@@ -251,6 +234,7 @@ a
   background-color: #CFCFCF
   display: block
   margin-left: 6em
+  overflow: hidden
   @media (max-width: 992px)
     margin-left: 4em
 
@@ -258,6 +242,7 @@ a
   font-family: 'Maven Pro', sans-serif
   margin-left: 33em
   color: #707070
+  overflow: hidden
   @media (max-width: 992px)
     margin-left: 12em
     font-size: 30px
@@ -266,13 +251,16 @@ a
 .image-parceria
   width: 80px
   margin-left: 0em
+  overflow: hidden
   @media (max-width: 992px)
     width: 200px
     margin-left: 9em
+
 .image-parceria-2
+  overflow: hidden
   @media (max-width: 992px)
     margin-left: 9em
-
+    margin-top: 2em
 
 
 
@@ -280,11 +268,21 @@ a
 
 // Card SLIDER
 
+.text-beneficios
+  justify-content: center
+  left: 50%
+  overflow: hidden
+  font-size: 30px
+  font-family: 'Maven Pro', sans-serif
+  margin-left: 15em
+
+
 .icon
   display: inline-block
   width: 1em
   height: 1em
   stroke-width: 0
+  overflow: hidden
   stroke: currentColor
   fill: currentColor
 
@@ -295,6 +293,7 @@ a
   height: 100%
   left: 0
   top: 0
+  overflow: hidden
 
   &:after
     content: ''
@@ -303,6 +302,7 @@ a
     left: 0
     width: 100%
     height: 100%
+    overflow: hidden
     background-color: #F7F8F9
     opacity: 0.9
 
@@ -312,6 +312,7 @@ a
   position: absolute
   top: 30px
   background: #fff
+  overflow: hidden
   border-radius: 10px
   box-shadow: 0 6px 26px 6px rgba(0,0,0,0.25)
   opacity: 0
@@ -321,6 +322,7 @@ a
 
   &.active
     left: 0
+    overflow: hidden
     top: 0
     opacity: 1
 
@@ -328,17 +330,18 @@ a
 
   &-slider
     z-index: 2
-    max-width: 1300px
+    max-width: 90%
     margin-left: auto
+    overflow: hidden
     margin-right: auto
     margin-top: 60px
 
     @media screen and (max-width: 1300px)
-      max-width: 1000px
+      max-width: 90%
 
 
     @media screen and (max-width: 576px)
-      margin-top: 45px
+      margin-top: 90%
 
 
     &__wrp
@@ -557,7 +560,7 @@ a
       width: 100%
 
   .hr-card
-    height: 3px
+    height: 40px
     width: 85%
     background-color: #33CC66
     margin-left: 4em
@@ -1207,7 +1210,6 @@ select.form-control:not([size]):not([multiple])
 
 .nav-cpe-dimensions
   height: 90px
-  width: 254px
   margin-top: -22px
   @media (min-width: 992px)
     height: 90px

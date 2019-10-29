@@ -50,7 +50,7 @@ var swiper = new Swiper('.news-slider', {
 
             bg.style.width = width + 'px';
             bg.style.height = height + 'px';
-            bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+            bg.style.transform = ' translateY(' + y + 'px)';
         }
     }
 });
@@ -80,5 +80,5 @@ swiper.on('slideChangeTransitionEnd', function () {
 
     bg.style.width = width + 'px';
     bg.style.height = height + 'px';
-    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    bg.style.transform = 'translateY(' + y + 'px)';
 });
